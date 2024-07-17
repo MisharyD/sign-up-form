@@ -12,43 +12,45 @@
     </div>
     <div class = "right-container">
         <h1 class = "heading">Get started</h1>
-        <div class="inputBoxesContainer">
+        <div class="inputBoxesContainer"><!-- This div is used just give a different background color the input fields-->
             <form class = "form" action = "#" method = "POST">
                 <div class="input-group">
                     <div>
                         <label for="firstName">First Name</label><br>
-                        <input type ="text" id="firstName">
+                        <input type ="text" id="firstName" required>
                     </div>
                     <div>
                         <label for="lastName">Last Name</label><br>
-                        <input type ="text" id="lastName">
+                        <input type ="text" id="lastName" required>
                     </div>
                 </div>
                 <div class = "input-group">
                     <div>
                         <label for="email">Email</label><br>
-                        <input type ="text" id="email">
+                        <input type ="email" id="email" required>
                     </div>
                     <div>
                         <label for="phoneNumber">Phone Number</label><br>
-                        <input type ="text" id="phoneNumber">
+                        <input type ="text" id="phoneNumber" required>
                     </div>
                 </div>
                 <div class = "input-group" >
                     <div>
                         <label for="password">Password</label><br>
-                        <input type ="text" id="password">
+                        <input type ="password" id="password" required>
                     </div>
                     <div>
                         <label for="confirmPassword">Confirm Password</label><br>
-                        <input type ="password" id="confirmPassword">
+                        <input type ="password" id="confirmPassword" required>
                     </div>
                 </div>
         </div>
-            <button type = "button" class = "createAcc">Create Account</button>
+            <button type = "submit" class = "createAcc">Create Account</button>
         </form>
         <p class = "logIn">Already have an acount? <a href="#">Log in</a></p>
 
     </div>
+
+    <script src = "script.js"></script>
 </body>
 </html>
