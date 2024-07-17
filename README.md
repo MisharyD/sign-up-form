@@ -1,6 +1,6 @@
 # sign-up-form
 Just some basic form using html,css and js that looks nice. <br>
-some things that could be added:
--add validation while typing
--add invalid messages
+Some things that could be added or fixed: <br>
+-add validation while typing <br>
+-add invalid messages <br>
 -also there is some problems that can be fixed when pressing the create acc button.
