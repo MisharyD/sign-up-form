@@ -13,35 +13,41 @@
     <div class = "right-container">
         <h1 class = "heading">Get started</h1>
         <div class="inputBoxesContainer"><!-- This div is used just give a different background color the input fields-->
-            <form class = "form" action = "#" method = "POST">
+            <form class = "form" action = "#" method = "POST" novalidate>
                 <div class="input-group">
-                    <div>
-                        <label for="firstName">First Name</label><br>
-                        <input type ="text" id="firstName" required>
+                    <div class = "input">
+                        <label for="firstName">First Name</label>
+                        <input type ="text" id="firstName" required >
+                        <span class = "error-message"></span>
                     </div>
-                    <div>
-                        <label for="lastName">Last Name</label><br>
+                    <div class = "input">
+                        <label for="lastName">Last Name</label>
                         <input type ="text" id="lastName" required>
+                        <span class = "error-message"></span>
                     </div>
                 </div>
                 <div class = "input-group">
-                    <div>
-                        <label for="email">Email</label><br>
+                    <div class = "input">
+                        <label for="email">Email</label>
                         <input type ="email" id="email" required>
+                        <span class = "error-message"></span>
                     </div>
-                    <div>
-                        <label for="phoneNumber">Phone Number</label><br>
-                        <input type ="text" id="phoneNumber" required>
+                    <div class = "input">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type ="text" id="phoneNumber" required maxlength="14">
+                        <span class = "error-message"></span>
                     </div>
                 </div>
                 <div class = "input-group" >
-                    <div>
-                        <label for="password">Password</label><br>
+                    <div class = "input">
+                        <label for="password">Password</label>
                         <input type ="password" id="password" required>
+                        <span class = "error-message"></span>
                     </div>
-                    <div>
-                        <label for="confirmPassword">Confirm Password</label><br>
+                    <div class = "input">
+                        <label for="confirmPassword">Confirm Password</label>
                         <input type ="password" id="confirmPassword" required>
+                        <span class = "error-message"></span>
                     </div>
                 </div>
         </div>

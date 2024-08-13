@@ -1,14 +1,3 @@
-@font-face {
-    font-family: 'orchideelightregular';
-    src: url('fonts/orchideelight-webfont.woff2') format('woff2'),
-         url('fonts/orchideelight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
 
 @font-face {
     font-family: 'orchideemediumregular';
@@ -79,9 +68,22 @@ input:focus
     border: 2px solid green;
 }
 
+input:valid
+{
+    border: 2px solid green;
+}
+
+/*
+    the 2 classes under serve the purpose of only giving the input an invalid state after interaction and not before.
+    the second class gets applied when the user leaves the input without it being valid so that the invalid visual stays on.
+*/
+input:invalid:focus {
+    border-color: red; 
+}
+
 .input-invalid
 {
-    border: 2px solid red;
+    border-color: red
 }
 
 .form
@@ -96,6 +98,19 @@ input:focus
 {
     display: flex;
     gap:1rem
+}
+
+.input
+{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    max-width: 200px;
+}
+
+.error-message
+{
+    color: rgb(239, 52, 52);
 }
 
 .createAcc
